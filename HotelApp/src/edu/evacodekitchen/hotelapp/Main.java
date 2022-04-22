@@ -26,7 +26,7 @@ public class Main {
 		try {System.out.println("final price for guest2 in hotel1 (should throw exception) : " + 
 				hotel1.calculateFinalPrice(new Guest(constants.guest2, RoomType.FAMILY, 3)));
 		} catch (Exception e) {
-			System.out.println("Hiba!\nA 'guest name2' vendeg nem szerepel a hotel1 hotelben!");
+			System.out.println("Hiba!\nA '" + constants.guest2 + "' vendeg nem szerepel a hotel1 hotelben!");
 		}
 	}
 }
