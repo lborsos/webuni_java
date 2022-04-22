@@ -1,11 +1,7 @@
 package net.lacisoft.covidvaccination;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
 
 public class Main {
 	

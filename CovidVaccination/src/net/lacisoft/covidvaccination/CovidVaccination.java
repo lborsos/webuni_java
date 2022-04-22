@@ -1,10 +1,6 @@
 package net.lacisoft.covidvaccination;
 
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
-
-import edu.evacodekitchen.hotelapp.GuestNotInThisHotelRuntimeException;
 
 public enum CovidVaccination {
 	SZPUTNYIK(90, 2), PFIZER(21, 3), MODERNA(30, 2), OXFORD(15, 4), SINOPHARM(21, 2), JOHNSON(0, 1), CONVIDECIA(45, 2);
