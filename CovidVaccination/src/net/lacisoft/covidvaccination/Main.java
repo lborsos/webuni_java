@@ -44,7 +44,8 @@ public class Main {
 				cv.toString(),
 				cv.getNrOfDaysBetweenVaccination(), 
 				cv.getNumberOfDosesRequired(), 
-				cv.calculateDateOfSecondShot(LocalDate.parse(date, formatter))));
+				cv.calculateDateOfSecondShot(LocalDate.parse(date, formatter)).format(formatter)));
+//				cv.calculateDateOfSecondShot(LocalDate.parse(date, formatter))));
 	}
 	
 	public static String headerStr() {
