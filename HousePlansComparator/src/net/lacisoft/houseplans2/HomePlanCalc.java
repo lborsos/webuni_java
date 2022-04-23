@@ -1,4 +1,4 @@
-package net.lacisoft.houseplanslaci;
+package net.lacisoft.houseplans2;
 
 public class HomePlanCalc {
 	final static float bedRoomUnitPrice = 200f; 

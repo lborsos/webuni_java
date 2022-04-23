@@ -1,4 +1,4 @@
-package net.lacisoft.houseplanslaci;
+package net.lacisoft.houseplans2;
 
 public class HPToString {
 	static int lineLenght = 63;

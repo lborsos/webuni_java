@@ -1,7 +1,7 @@
-package net.lacisoft.houseplanslaci;
+package net.lacisoft.houseplans2;
 
 public class Search {
-
+	
 	public static HomePlan[] findPlansSmallerThan(HomePlan[] plans, float area) {
 		HomePlan[] filteredPlans = new HomePlan[plans.length];
 		int j = 0;
@@ -25,5 +25,4 @@ public class Search {
 		}
 		return filteredPlans;
 	}
-	
 }
