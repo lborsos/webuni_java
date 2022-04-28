@@ -15,7 +15,7 @@
 */
 //		Borsos László	lborsos@gmail.com
 
-package net.lacisoft.houseplans2;
+package net.lacisoft.houseplansComparator;
 
 public class Main {
 	public static void main(String[] args) {
