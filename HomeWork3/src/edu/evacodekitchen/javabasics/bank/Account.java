@@ -11,7 +11,7 @@ public class Account {
 	private String owner;
 	private String id;
 	private List<Transaction> tranzactions;
-	
+
 	public Account(String owner, String id) {
 		this.owner = owner;
 		this.id = id;
@@ -23,11 +23,14 @@ public class Account {
 	}
 
 	public void doTransaction(int amount, LocalDate date) {
+		if (getBalance() + amount < 0) {
+			throw new TooLowBalanceException();
+		}
 		tranzactions.add(new Transaction(amount, date));
 	}
 
 	public List<Transaction> getTransactionsFor(LocalDate date) {
-		return tranzactions.stream().filter(x -> x.getDate() == date).collect(Collectors.toList());
+		return tranzactions.stream().filter(x -> x.getDate().equals(date)).collect(Collectors.toList());
 	}
 
 	@Override
@@ -41,7 +44,5 @@ public class Account {
 		Account other = (Account) obj;
 		return Objects.equals(id, other.id) && Objects.equals(owner, other.owner);
 	}
-	
-	
-	
+
 }
