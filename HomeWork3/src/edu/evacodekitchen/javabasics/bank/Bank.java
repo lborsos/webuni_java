@@ -2,6 +2,7 @@ package edu.evacodekitchen.javabasics.bank;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Bank {
 
@@ -16,8 +17,8 @@ public class Bank {
 	}
 
 	public List<Account> getPremiumAccounts() {
-		// TODO
-		return elements;
+		return elements.stream().filter(x -> x.getBalance() > 12000).collect(Collectors.toList());
+//		return (List<Account>) elements.stream().filter(x -> x.getBalance() > 12000).findAny().get();
 	}
 
 }
