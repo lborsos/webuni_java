@@ -1,4 +1,4 @@
 # webuni_java
 
 ### Borsos László
-### lborsos <at> gmail.com
+### lborsos(at)gmail.com
